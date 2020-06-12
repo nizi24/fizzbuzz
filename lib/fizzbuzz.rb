@@ -1,4 +1,5 @@
 class Fizzbuzz
+
   def calculate number
     if number % 3 == 0 && number % 5 == 0
       'fizzbuzz'
@@ -6,6 +7,8 @@ class Fizzbuzz
       'fizz'
     elsif number % 5 == 0
       'buzz'
+    elsif number.to_s.include? '7'
+      'GitHub'
     else
       number
     end
